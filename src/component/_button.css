@@ -1,0 +1,27 @@
+.c-button {
+  width: max-content;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+
+  padding: 12px 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: var(--button-background, var(--color-primary));
+  color: var(--button-color, var(--color-white));
+  border: var(--button-border, none);
+}
+
+.c-button[data-type="filled"] {
+  --button-color: var(--color-white);
+  --button-background: var(--color-primary);
+}
+
+.c-button[data-type="outline"] {
+  --button-color: var(--color-primary);
+  --button-background: transparent;
+  --button-border: 1px solid var(--color-primary);
+}
