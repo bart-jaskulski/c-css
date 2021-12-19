@@ -1,0 +1,22 @@
+{
+  "name": "c-css",
+  "version": "1.0.0",
+  "description": "CSS based on components",
+  "main": "src/style.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bart-jaskulski/c-css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Bart Jaskulski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bart-jaskulski/c-css/issues"
+  },
+  "homepage": "https://github.com/bart-jaskulski/c-css#readme"
+}

@@ -1,46 +1,42 @@
-@custom-media --sm (min-width: 640px);
+@custom-media --sm (min-width: 480px);
 @custom-media --md (min-width: 768px);
 @custom-media --lg (min-width: 1024px);
-@custom-media --xl (min-width: 1280px);
-@custom-media --xxl (min-width: 1536px);
+@custom-media --xl (min-width: 1440px);
+@custom-media --xxl (min-width: 1920px);
 @custom-media --dark (prefers-color-scheme: dark);
 
 :root {
+  /* Design tokens */
   --color-primary: #cc3d87;
-  --color-white: #fff;
-  --color-black: #000;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-pale: #ededed;
   --color-gray: #656464;
   --color-dark: #3f3f3f;
 
+  /* Color aliases */
   --color-text: var(--color-black);
   --color-background: var(--color-dark);
   --color-link: var(--color-primary);
-  
-  --font-sm: 14px;
-  --font-md: 16px;
-  --font-lg: 24px;
-  
+
+  /* Font sizes */
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+  --text-2xl: 40px;
+
   --line-height: calc(2.5ex + 4px);
-  
-  --site-margin: 1.5rem;
-  
+
+  /* Spacing */
   --space-md: 1.5rem;
   --space-sm: 0.5rem;
-  
+
   --shadow-large: 0px 1px 16px 0px #00000029;
   --shadow: 0 2px 10px 0 #00000014;
 
-  --container-full: 1040px;
+  --container-full: clamp(327px, 90vw, 1060px);
   --container-narrow: 500px;
 
-  @media (--md) {
-    --site-margin: 3.5rem;
-  }
-
-  @media (--lg) {
-    --site-margin: 5rem;
-  }
 }
-
 

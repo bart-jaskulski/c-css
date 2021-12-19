@@ -1,0 +1,45 @@
+/*
+* General HTML elements styling. Without using classes.
+*/
+
+html {
+  box-sizing: border-box;
+  margin: auto;
+  font-family: var(--font-serif);
+  /* font-size: clamp(1.1rem, 1.2vw + 1vh, 1.25rem); */
+  text-rendering: optimizeSpeed;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* For CMS usage - list elements without class should have delauft styling */
+:where(ul, ol):not([class]) {
+  list-style: revert;
+  padding-inline-start: 24px;
+}
+
+summary {
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
+}
+
+a:not([href]) {
+  cursor: not-allowed;
+}
+
+:where(p, a):not([class]) {
+  font-size: var(--text-base, 1rem);
+  line-height: var(--line-height, 1.5);
+}
+
+strong {
+  font-weight: var(--font-bold, 700);
+}

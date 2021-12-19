@@ -1,27 +1,14 @@
-@import "_variables.css";
-@import "_reset.css";
-@import "_fonts.css";
-
+@import "base/_variables.css";
+@import "base/_reset.css";
+@import "base/_fonts.css";
 @import "base/_a11y.css";
-@import "base/_elements.css";
-@import "base/_typography.css";
-@import "base/_links.css";
+@import "base/_defaults.css";
 
 @import "component/_button.css";
 @import "component/_card.css";
 @import "component/_dropdown.css";
 @import "component/_input.css";
+@import "component/_menu.css";
 
-/* @import "layout"; */
-
-@import "_utils.css"
-
-:root {
-  --link-visited: #9ebfe5;
-  --link-hover-background: rgba(255, 255, 255, 0.05);
-}
-
-.flow > * + * {
-  margin-top: var(--flow);
-  margin-bottom: var(--flow);
-}
+@import "layout/_container.css";
+@import "layout/_flow.css";

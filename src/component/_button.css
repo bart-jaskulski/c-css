@@ -6,9 +6,9 @@
 
   padding: 12px 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: var(--font-bold, 700);
+  font-size: var(--text-base, 14px);
+  line-height: var(--line-height, 1.5);
 
   background-color: var(--button-background, var(--color-primary));
   color: var(--button-color, var(--color-white));

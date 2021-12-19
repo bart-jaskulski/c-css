@@ -21,10 +21,6 @@ ol, ul {
   list-style: none;
 }
 
-:where(ol, ul):not([class]) {
-  list-style: revert;
-}
-
 summary::-webkit-details-marker{
   display: none;
 }

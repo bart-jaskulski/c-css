@@ -70,14 +70,6 @@
   display: none;
 }
 
-.list-disc {
-  list-style-type: disc;
-}
-
-.list-inside {
-  list-style-position: inside;
-}
-
 .u-img-full {
   width: 100%;
 }

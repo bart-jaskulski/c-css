@@ -1,0 +1,15 @@
+.l-flow > * + * {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.l-flow[data-size="small"] > * + * {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.l-flow[data-size="large"] > * + * {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
